@@ -28,6 +28,7 @@
     "tape": "^4.5.1"
   },
   "dependencies": {
-    "hmu-plugin": "^0.1.1"
+    "chalk": "^1.1.3",
+    "hmu-plugin": "^0.2.0"
   }
 }
