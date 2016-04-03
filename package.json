@@ -6,10 +6,10 @@
   "main": "lib",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jamen/hmu-npm"
+    "url": "https://github.com/devjs/hmu-npm"
   },
   "scripts": {
-    "test": "gulp; tape test",
+    "test": "gulp; node test",
     "build": "gulp",
     "prepublish": "gulp"
   },
@@ -18,17 +18,17 @@
     "lib"
   ],
   "keywords": [
-    "hmu"
+    "hmu",
+    "npm",
+    "availability"
   ],
   "devDependencies": {
     "eslint": "^2.6.0",
     "eslint-config-airbnb": "^6.2.0",
     "gulp": "^3.9.1",
-    "gulp-eslint": "^2.0.0",
-    "tape": "^4.5.1"
+    "gulp-eslint": "^2.0.0"
   },
   "dependencies": {
-    "chalk": "^1.1.3",
     "hmu-plugin": "^0.2.0"
   }
 }
