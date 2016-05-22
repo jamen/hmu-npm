@@ -13,7 +13,7 @@
   },
   "private": false,
   "files": [
-    "lib"
+    "index.js"
   ],
   "devDependencies": {
     "eslint": "^2.10.2",
@@ -26,9 +26,7 @@
   "license": "MIT",
   "dependencies": {
     "any-promise": "^1.3.0",
-    "async-each": "^1.0.0",
     "promise-routine": "^1.0.0",
-    "request": "^2.72.0",
-    "request-promise": "^3.0.0"
+    "request": "^2.72.0"
   }
 }
