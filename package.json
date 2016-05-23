@@ -4,16 +4,17 @@
   "version": "2.0.0-2",
   "description": "A hmu plugin for checking npm package availability.",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/devjs/hmu-npm"
-  },
+  "repository": "devjs/hmu-npm",
   "scripts": {
-    "test": "tape test.js | tap-spec"
+    "test": "eslint index.js test.js && tape test.js | tap-spec"
   },
-  "private": false,
   "files": [
     "index.js"
+  ],
+  "keywords": [
+    "hmu-plugin",
+    "npm",
+    "availability"
   ],
   "devDependencies": {
     "eslint": "^2.10.2",
