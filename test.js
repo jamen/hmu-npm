@@ -11,11 +11,12 @@ test('single name', function(t) {
 
   hmu([{
     plugin: npm,
-    input: ['foobar', 'bazqux']
+    input: ['foobar', 'bazqux', 'clide']
   }]).then(function(results) {
     t.same(results, [
       ['npm', 'foobar', 'taken'],
-      ['npm', 'bazqux', 'free']
+      ['npm', 'bazqux', 'free'],
+      ['npm', 'clide', 'free']
     ], 'correct output');
   });
 });
