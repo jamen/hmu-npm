@@ -1,32 +1,35 @@
 {
   "name": "hmu-npm",
-  "author": "Jamen Marzonie",
+  "description": "A HMU plugin for checking npm packages",
   "version": "2.0.0",
-  "description": "A hmu plugin for checking npm package availability.",
-  "main": "index.js",
-  "repository": "devjs/hmu-npm",
-  "scripts": {
-    "test": "eslint index.js test.js && tape test.js | tap-spec"
+  "homepage": "https://github.com/jamen/hmu-npm",
+  "author": "Jamen Marz (https://git.io/jamen)",
+  "repository": "jamen/hmu-npm",
+  "bugs": {
+    "url": "https://github.com/jamen/hmu-npm/issues"
   },
+  "license": "MIT",
   "files": [
     "index.js"
   ],
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "node test"
+  },
   "keywords": [
+    "hmu",
+    "hmu-npm",
     "hmu-plugin",
-    "npm",
-    "availability"
+    "jamen"
   ],
   "devDependencies": {
-    "eslint": "^2.10.2",
-    "eslint-config-google": "^0.5.0",
-    "hmu-core": "^0.2.0",
-    "nock": "^8.0.0",
-    "tap-spec": "^4.1.1",
-    "tape": "^4.5.1"
+    "tape": "^4.6.3"
   },
-  "license": "MIT",
   "dependencies": {
-    "any-promise": "^1.3.0",
-    "promise-routine": "^1.0.0"
+    "got": "^6.6.3",
+    "pull-fetch": "0.0.0",
+    "pull-stream": "^3.5.0"
   }
 }
